@@ -8,5 +8,9 @@ def mimic(message: str) -> str:
     return message
 
 
-def main():
-    print(mimic(message="Howdy!"))
+def main() -> _empty:
+    print(mimic(message=input("What is your message?")))
+
+
+if __name__ == "__main__":
+    main()
