@@ -6,9 +6,9 @@ __author__ = "730796549"
 def main_planner(guests: int) -> None:
     """Display a summary of data about a tea party based on the number of guests"""
     print("A cozy tea party for " + str(guests) + " people!")
-    print("Tea Bags: " + str(tea_bags(guests)))
-    print("Treats: " + str(treats(guests)))
-    print("Cost: $" + str(cost(tea_bags(guests), treats(guests))))
+    print("Tea Bags: " + str(tea_bags(people=guests)))
+    print("Treats: " + str(treats(people=guests)))
+    print("Cost: $" + str(cost(tea_count=tea_bags(guests), treat_count=treats(guests))))
 
 
 def tea_bags(people: int) -> int:
