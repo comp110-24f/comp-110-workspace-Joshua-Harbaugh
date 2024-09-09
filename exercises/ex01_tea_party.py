@@ -24,7 +24,8 @@ def tea_bags(people: int) -> int:
 def treats(people: int) -> int:
     """Calculate the number of treats needed based on the amount of tea people dring"""
     return int(
-        1.5 * tea_bags(people)
+        1.5
+        * tea_bags(people=people)  # set the keyword parameter people equal to people
     )  # call tea_bags function to find the number of tea bags based on amount of people
 
 
