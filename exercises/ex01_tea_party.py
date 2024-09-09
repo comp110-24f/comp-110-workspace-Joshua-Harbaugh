@@ -12,7 +12,8 @@ def main_planner(guests: int) -> None:
     print("Treats: " + str(treats(people=guests)))  # print the number of treats
     print(
         "Cost: $" + str(cost(tea_count=tea_bags(guests), treat_count=treats(guests)))
-    )  # call tea and treats to calculate the total number of each item needed based on the number of guests
+    )  # call tea and treats to calculate the total number of each item needed
+    # based on the number of guests
 
 
 def tea_bags(people: int) -> int:
@@ -24,7 +25,7 @@ def treats(people: int) -> int:
     """Calculate the number of treats needed based on the amount of tea people dring"""
     return int(
         1.5 * tea_bags(people)
-    )  # call the tea_bags function to find the number of tea bags based on the number of people
+    )  # call tea_bags function to find the number of tea bags based on amount of people
 
 
 def cost(tea_count: int, treat_count: int) -> float:
