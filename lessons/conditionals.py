@@ -3,10 +3,13 @@
 
 def less_than_10(num: int) -> None:
     """tell us if a num < 10."""
+    dub: int = num * 2
+    dub = dub - 1
+    print(dub)
     if num < 10:
-        print("less than 10")
+        print("small number")
     else:
-        print("greater than or equal to 10")
+        print("big number")
     print("end of function")
 
 
@@ -26,4 +29,17 @@ def check_first_letter(word: str, letter: str) -> str:
         return "No Match"
 
 
-print(check_first_letter(word="beef", letter="d"))
+def get_weather_report() -> str:
+    weather: str = input("What is the weather? ")
+    if weather == "rainy" or weather == "cold":
+        print("Bring a Jacket")
+    elif weather == "hot":
+        print("keep cool out there")
+    else:
+        print("I don't recongnize this weather.")
+    return weather
+
+
+x: int = 1
+x = x + 1
+print(x)
